@@ -13,9 +13,9 @@
   "policyType": "cpu",
   "policyThreshold": 80,
   "envParams": {
-    "MYSQL_ADDRESS": "10.31.107.173:3306",
-    "MYSQL_PASSWORD": "root",
-    "MYSQL_USERNAME": "Medbot8848"
+    "MYSQL_ADDRESS": "sh-cynosdbmysql-grp-1ore5tow.sql.tencentcdb.com:25168",
+    "MYSQL_PASSWORD": "Medbot8848",
+    "MYSQL_USERNAME": "root"
   },
   "policyDetails": [
 	{
