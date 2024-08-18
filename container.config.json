@@ -17,16 +17,6 @@
     "MYSQL_PASSWORD": "Medbot8848",
     "MYSQL_USERNAME": "root"
   },
-  "policyDetails": [
-	{
-		"PolicyType": "cpu",
-		"PolicyThreshold": 80
-	},
-	{
-		"PolicyType": "mem",
-		"PolicyThreshold": 80
-	}
-  ],
   "customLogs": "stdout",
   "initialDelaySeconds": 2,
   "dataBaseName": "nodejs_demo",

@@ -277,6 +277,7 @@
       method: "get",
     }).done(function (res) {
       if (res && res.data !== undefined) {
+        console.log(res.data)
         $(".count-number").html(res.data);
       }
     });
