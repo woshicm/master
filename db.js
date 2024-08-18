@@ -1,10 +1,8 @@
 const { Sequelize, DataTypes } = require("sequelize");
 
 // 从环境变量中读取数据库配置
-// const { MYSQL_USERNAME, MYSQL_PASSWORD, MYSQL_ADDRESS = "" } = process.env;
-MYSQL_USERNAME = "root";
-MYSQL_PASSWORD = "Medbot8848";
-MYSQL_ADDRESS = "sh-cynosdbmysql-grp-1ore5tow.sql.tencentcdb.com:25168";
+const { MYSQL_USERNAME, MYSQL_PASSWORD, MYSQL_ADDRESS = "" } = process.env;
+
 const [host, port] = MYSQL_ADDRESS.split(":");
 
 const sequelize = new Sequelize("nodejs_demo", MYSQL_USERNAME, MYSQL_PASSWORD, {
@@ -24,7 +22,6 @@ const Counter = sequelize.define("Counter", {
 
 // 数据库初始化方法
 async function init() {
-  console.log(host + port + MYSQL_USERNAME + MYSQL_PASSWORD)
   await Counter.sync({ alter: true });
 }
 
